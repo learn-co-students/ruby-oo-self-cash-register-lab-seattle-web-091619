@@ -20,7 +20,7 @@ We're going to create an Object Oriented Cash Register that can:
 
 Note that a discount is calculated as a percentage off of the total cash register price (e.g. a discount of 20 means the customer receives 20% off of their total price).
 
-**Hint #1:** Keep in mind that to call an instance method *inside* another instance method, we use the `self` keyword to refer to the instance on which we are operating. For example:
+**H #1:** Keep in mind that to call an instance method *inside* another instance method, we use the `self` keyword to refer to the instance on which we are operating. For example:
 
 ```ruby
 class Person
@@ -41,8 +41,8 @@ Follow along with the specs in `spec/cash_register_spec.rb`. Reading along with 
 
 Take it one step at a time!
 
-**Hint #2:** The `apply_discount` requires some knowledge about working with an Integer versus a Float in Ruby. Note that `100.class` returns Integer while `100.0.class` returns Float.  Ruby provides methods for changing an object of type Integer to a Float and vice versa.
+**H #2:** The `apply_discount` requires some knowledge about working with an Integer versus a Float in Ruby. Note that `100.class` s Integer while `100.0.class` s Float.  Ruby provides methods for changing an object of type Integer to a Float and vice versa.
 
-**Hint #3:** The `void_last_transaction` method will remove the last transaction from the total. You'll need to make an additional attribute accessor and keep track of that last transaction amount somehow. In what method of the class are you working with an individual item?
+**H #3:** The `void_last_transaction` method will remove the last transaction from the total. You'll need to make an additional attribute accessor and keep track of that last transaction amount somehow. In what method of the class are you working with an individual item?
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/oo-cash-register' title='Object Oriented Cash Register'>Object Oriented Cash Register</a> on Learn.co and start learning to code for free.</p>
