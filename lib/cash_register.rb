@@ -2,7 +2,7 @@ require "pry"
 
 class CashRegister
     attr_accessor :discount, :total, :add_item, :item
-    def initialize(discount=20, total=0.0)
+    def initialize(discount=nil, total=0.0)
         @total = total
         @discount = discount
         @item = []
@@ -18,9 +18,8 @@ class CashRegister
     end
 
     def apply_discount
-        if @discount != 20
+        if @discount == nil
             return "There is no discount to apply."
-            
         else
             @total = @total - (@total * discount / 100)
             return "After the discount, the total comes to $#{@total.to_i}."
@@ -41,3 +40,5 @@ class CashRegister
     end
     
 end
+
+cash =CashRegister.new(20,10)
