@@ -12,7 +12,7 @@ class CashRegister
 
     def add_item(title, price, quantity = 1)
         @added_items << ({:item => title, :quantity => quantity})
-        quantity.times {@price << price}
+        @price << price * quantity
         quantity.times {@item << title}
        @total += price.to_f * quantity
     end
